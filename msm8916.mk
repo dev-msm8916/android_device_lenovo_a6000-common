@@ -210,11 +210,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
 
 # System Properties
-$(call inherit-product, device/xiaomi/wt88047-common/system_prop.mk)
+$(call inherit-product, device/lenovo/a6000-common/system_prop.mk)
 ifeq ($(TARGET_BOARD_PLATFORM_VARIANT),msm8939)
-$(call inherit-product, device/xiaomi/wt88047-common/system_prop_msm8939.mk)
+$(call inherit-product, device/lenovo/a6000-common/system_prop_msm8939.mk)
 else ifeq ($(TARGET_BOARD_PLATFORM_VARIANT),msm8916)
-$(call inherit-product, device/xiaomi/wt88047-common/system_prop_msm8916.mk)
+$(call inherit-product, device/lenovo/a6000-common/system_prop_msm8916.mk)
 endif
 
 # TimeKeep
